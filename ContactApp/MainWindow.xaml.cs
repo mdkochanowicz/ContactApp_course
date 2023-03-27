@@ -23,12 +23,21 @@ namespace ContactApp
         public MainWindow()
         {
             InitializeComponent();
+
+            ReadDatabase();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             NewContactWindow newContactWindow = new NewContactWindow();
             newContactWindow.ShowDialog();
+
+            ReadDatabase();
+        }
+
+        void ReadDatabase()
+        {
+
         }
     }
 }
